@@ -145,45 +145,22 @@
         <div class="col-lg-6 col-lg-offset-3">
           <p>zenzenzen087@gmail.com</p>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
-
-            <div class="form-group">
-              <label for="contact-name">あなたの名前</label>
-              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="contact-email">あなたのメール</label>
-              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="contact-subject">タイトル</label>
-              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-              <div class="validate"></div>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-message">メッセージ</label>
-              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
-              <div class="validate"></div>
-            </div>
-
-            <div class="loading"></div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-            <div class="form-send">
-              <button type="submit" class="btn btn-large">Send Message</button>
-            </div>
-
-          </form>
-
-        </div>
+         <head>
+           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+           <title>メール送信フォーム</title>
+         </head>
+         <body>
+           <h1>メール送信フォーム</h1>
+           <form action="submit.php" method="post">
+             <div>氏名： <input type="text" name="name" id="name"></div>
+             <div>メールアドレス: <input type="text" name="to" id="to"></div>
+             <div>件名: <input type="text" name="subject" id="subject"></div>
+             <div>本文: <br />
+               <textarea name="message" id="message" cols="50" rows="10"></textarea>
+             </div>
+             <div><input type="submit" value="送信" /></div>
+           </form>
+        </body>
       </div>
     </div>
   </div>
