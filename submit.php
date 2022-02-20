@@ -31,7 +31,7 @@ try {
     $mail->Port       = 587;               // TCP ポート (TLS の場合 587)
 
     // メール本体
-    $mail->setFrom('XXXXX@gmail.com', 'hazuki');  // 送信元メールアドレスと名前
+    $mail->setFrom('zenzenzen087@gmail.com', 'zen');  // 送信元メールアドレスと名前
     $mail->addAddress($to, mb_encode_mimeheader($name, 'ISO-2022-JP'));  // 送信先メールアドレスと名前
     $mail->Subject = mb_encode_mimeheader($subject, 'ISO-2022-JP');  // 件名
     $mail->Body    = mb_convert_encoding($message, "JIS","UTF-8");  // 本文
