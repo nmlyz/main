@@ -1,0 +1,22 @@
+Package: vn.tuandb.milkyway2-ios14fix
+Architecture: iphoneos-arm
+Version: 0.0.2.1
+Section: Tweaks
+Maintainer: Hoàng Tuân <contact@tuandb.name.vn>
+Installed-Size: 136
+Depends: vn.tuandb.milkyway2, mobilesubstrate
+Conflicts: com.hoangtuan.milkyway2-ios14fix
+Filename: ./debs/milkyway2(ios14).deb
+Size: 10504
+MD5sum: f8efaf60acfe0094cf1bc49c6db8d435
+SHA1: 1865068efd2401081ddd65a24739927b821c44d1
+SHA256: 4ed6569e5b000ffad504681ebf32c96a2a9daa4120bc818a7f9af52c800d1c35
+SHA512: 39a408428aeb5c430c641beea778a39ff590a14242c02b5d29335afd6b5e250b1c7b58503d4f3a6c9135b4d7ef803011b12ae314b30733b4ebb5b6a8e95c2259
+Homepage: https://repo.tuandb.name.vn
+Description: Sửa lỗi Milkyway2 không hoạt động trên iOS14.
+Name: MilkyWay2 (Fix iOS14)
+Icon: file:///Library/tuandb.IconRepo/Tweaks.png
+Depiction: https://repo.tuandb.name.vn/info.html?id=vn.tuandb.milkyway2-ios14fix
+Author: Brend0n
+Support: Hoàng Tuân <contact@tuandb.name.vn>
+
