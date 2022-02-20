@@ -25,8 +25,8 @@ try {
     $mail->isSMTP();                       // SMTP 利用
     $mail->Host       = 'smtp.gmail.com';  // SMTP サーバー(Gmail の場合これ)
     $mail->SMTPAuth   = true;              // SMTP認証を有効にする
-    $mail->Username   = 'XXXXX@gmail.com'; // ユーザ名 (Gmail ならメールアドレス)
-    $mail->Password   = 'xxxxxxxxxx';      // パスワード
+    $mail->Username   = 'zenzenzen087@gmail.com'; // ユーザ名 (Gmail ならメールアドレス)
+    $mail->Password   = 'zennago0831';      // パスワード
     $mail->SMTPSecure = 'tls';             // 暗号化通信 (Gmail では使えます)
     $mail->Port       = 587;               // TCP ポート (TLS の場合 587)
 
