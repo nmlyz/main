@@ -1,0 +1,8 @@
+Origin:zen.github.io
+Label:ぜん
+Suite: stable
+Version: 1.0
+Codename:テスト
+Architectures: iphoneos-arm
+Components: main
+Description:テスト用です
