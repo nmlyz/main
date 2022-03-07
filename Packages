@@ -1,22 +1,45 @@
 Package: vn.tuandb.milkyway2-ios14fix
 Architecture: iphoneos-arm
-Version: 0.0.2.1
+Version: 9.9.9.9
 Section: Tweaks
-Maintainer: Hoàng Tuân <contact@tuandb.name.vn>
+Maintainer: Zen<zenzenzen087@gmail.com>
 Installed-Size: 136
 Depends: vn.tuandb.milkyway2, mobilesubstrate
 Conflicts: com.hoangtuan.milkyway2-ios14fix
-Filename: ./debs/milkyway2(ios14).deb
-Size: 10504
-MD5sum: f8efaf60acfe0094cf1bc49c6db8d435
-SHA1: 1865068efd2401081ddd65a24739927b821c44d1
-SHA256: 4ed6569e5b000ffad504681ebf32c96a2a9daa4120bc818a7f9af52c800d1c35
-SHA512: 39a408428aeb5c430c641beea778a39ff590a14242c02b5d29335afd6b5e250b1c7b58503d4f3a6c9135b4d7ef803011b12ae314b30733b4ebb5b6a8e95c2259
+Filename: ./debs/Milkyway2.deb
+Size: 44784
+MD5sum: 230972519fbd80c921bfdca9d9ffd760
+SHA1: 835b43feb943aa1f3d9de913d424b43a9ba49a1b
+SHA256: 27eade84c5acedb800d0e4367d3d0f5f775d839639b5386055e77b34e4737f63
+SHA512: 1369e290b55244f074d42874afa2c65fc57f4e497fc16e4c8a7e5f86125557705a962bd84b98f649cdd65656980360c61c270b7555183b46323e879a103da0ff
 Homepage: https://zen0831.github.io/
-Description: ほとんどの端末で使えるMilkyway2です
-Name: MilkyWay2(zen repo)
+Description: ほとんどの端末で使えるMilkyway2です。
+Name: MilkyWay2 (All Device)
 Icon: file:///Library/tuandb.IconRepo/Tweaks.png
 Depiction: https://zen0831.github.io/
-Author: zen0831
-Support: zen0831 <zenzenzen087@gmail.com>
+Author: Zen
+Support: Zen <zenzenzen087@gmail.com>
+
+Package: idv.aqua.imem
+Architecture: iphoneos-arm
+Version: 12.1
+Priority: optional
+Section: Utilities
+Maintainer: Aqua Wu <igameguardian@gmail.com>
+Installed-Size: 1372
+Depends: firmware (>= 11.0)
+Filename: ./debs/imemeditor.deb
+Size: 1078368
+MD5sum: 707a4bef870cc9468b3ab348efbc9dae
+SHA1: 4a3eb3bb52b6ca20e04a5e02a6c4bd9b870cac30
+SHA256: 9c02e4d0498d6ce6cb7af57720753ba47e6faa561fd034ca83f401b6cf18522a
+SHA512: 8f93164c45a0277ed2db831f223e71603a8f37e0c6bab5bc0c97ae1f069caaf387ea97187a80a5e6ea08c5ef8673dd0b47092722b3fa342c61d2b709ec5a32c8
+Homepage: https://igg-server.herokuapp.com/
+Description: igameguardianを日本語化しました。
+Tag: purpose::uikit, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11 compatible::ios12
+Name: iMemEditor(日本語化ver.)
+Depiction: https://igg-server.herokuapp.com/
+Sponsor: Aqua Wu <igameguardian@gmail.com>
+Author: Aqua Wu <igameguardian@gmail.com>
+dev: aqua
 
