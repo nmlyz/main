@@ -123,13 +123,18 @@
   <section id="about" name="about"></section>
   <div id="f">
     <div class="container">
-      <form method="POST"
-      action="zenzenzen087@gmail.com">
-      <div>名前: <input type=text name="NAME" size=20></div>
-      <div>感想: <input type="text" name="MSG" size=20></div>
-      <input type="submit" value="  送信  ">
-      <input type="reset"  value="  取消  ">
-      </form>
+      <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" charset="UTF-8"></script>
+      </head>
+    	<body>
+	    	<form action="./mail.php" method="post">
+	    	<p>受信者</p><input type="text" name="to">
+	    	<p>タイトル</p><input type="text" name="title">
+	    	<p>本文</p><textarea name="content" cols="50" rows="5"></textarea>
+	    	<p><input type="submit" name="send" value="送信"></p>
+	    	</form>
+    	</body>
     </div>
     <!-- /container  -->
   </div>
