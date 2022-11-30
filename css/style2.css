@@ -1,9 +1,40 @@
-#newstext p1 {
-  color: black;
-  font-size: 15px;
+li {
+  border-bottom: 1px dotted #000;
+  list-style: none;
+  padding: 20px;
+  width: auto;
 }
 
-#newstext a1 {
-  color: red;
-  font-size: 15px;
+a1 {
+  color: #000;
+  text-decoration: none;
+}
+
+span1 {
+  background-color: #2388b8;
+  border-radius: 3px;
+  color: #fff;
+  width: 40px;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  font-size:10px;
+}
+
+span2 {
+  background-color: indianred;
+  border-radius: 3px;
+  color: #fff;
+  width: 40px;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  font-size: 10px;
+}
+
+
+time {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 40px;
 }
