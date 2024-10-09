@@ -81,11 +81,10 @@
           <p>discord serverはこちら↓</p>
           <p><a href="https://discord.gg/RgvUjpcftP"><button type="button" class="btn btn-warnning">join server</button></a></p>
           <body>
-            <h1>Hello from GitHub Pages</h1>
+            <h1>Hello from GitHub Pages！</h1>
             <button id="callApi">Get My IP</button>
             <script>
               document.getElementById('callApi').onclick = function() {
-                alert("クリックしました！");
                 fetch('https://us-central1-nmlyz-428802.cloudfunctions.net/get_client_ip') // ここにCloud FunctionsのURLを挿入
                   .then(response => response.text())
                   .then(data => {
