@@ -80,7 +80,27 @@
           <p>Twitter<a href="http://twitter.com/qr1x_">@xc2p_</a></p>
           <p>discord serverはこちら↓</p>
           <p><a href="https://discord.gg/RgvUjpcftP"><button type="button" class="btn btn-warnning">join server</button></a></p>
-          
+          <head>
+           <title>My Python App</title>
+         </head>
+         <body>
+          <h1>Hello from GitHub Pages</h1>
+          <button id="callApi">Get My IP</button>
+          <p id="response"></p>
+
+          <script>
+            document.getElementById('callApi').onclick = function() {
+              fetch('https://us-central1-nmlyz-428802.cloudfunctions.net/get_client_ip') // ここにCloud FunctionsのURLを挿入
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('response').innerText = data;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+             };
+          </script>
+         </body>
           
           
           
