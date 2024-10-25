@@ -1,8 +1,8 @@
-Origin:zenのリポジトリ
-Label:ぜん
+Origin:nmlyz rrepository
+Label:nmlyz
 Suite: stable
 Version: 1.0
 Codename:テスト
 Architectures: iphoneos-arm
 Components: main
-Description:テスト用です
+Description:igg-milkyway
